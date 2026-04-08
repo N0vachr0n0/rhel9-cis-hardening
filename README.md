@@ -2,7 +2,18 @@
 
 > Script de remédiation CIS Benchmark Level 1 pour RHEL 9 — 29 sections couvrant le durcissement filesystem, kernel, SSH, PAM (faillock, pwquality, historique MDP), AIDE, sudo, crypto policies et journald. Compatible FreeIPA et Red Hat Satellite. Supporte `--dry-run` et l'exécution par section.
 
-**Contexte :** VM rattachée à **FreeIPA** + **Red Hat Satellite**
+**Contexte :** VM rattachée à **FreeIPA** (à venir) + **Red Hat Satellite**
+
+<br>
+
+**Commande oscap effectué pour le scan:**
+```
+oscap xccdf eval \
+  --profile xccdf_org.ssgproject.content_profile_cis_server_l1 \
+  --report rapport-cis-l1.html \
+  --results resultats-cis-l1.xml \
+  /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+```
 
 ---
 
